@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <style>
+
+  section:first-child {
+    width: 90%;
+    max-width: 48em;
+    margin: 5% auto;
+    }
+
+  section {
+    font-family: monospace;
+    }
+
+  section h2 {
+    font-size: 2.4em;
+    line-height: 1.2;
+    }
+
+  section h3 {
+    font-size: 1.8em;
+    line-height: 1.2;
+    }
+
+  section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    }
+
+  section ul {
+    padding-left: 0;
+    }
+
+  section li {
+    font-size: 1.1em;
+    line-height: 1.5;
+    }
+
+  .copyedit {
+    background: #ffc;
+    cursor: help;
+    }
+
+  /* display like `sup` element */
+
+  del.copyedit::after {
+    display: inline-block;
+    position: relative;
+    top: -.875em;
+    left: -.25em;
+    content: url("img/del.svg");
+    font-size: 75%;
+    line-height: 0;
+    vertical-align: baseline;
+    margin-right: -1em;
+    }
+
+  /* display like `sub` element */
+
+  ins.copyedit::before {
+    display: inline-block;
+    position: relative;
+    bottom: -.875em;
+    left: -.875em;
+    content: url("img/ins.svg");
+    font-size: 75%;
+    line-height: 0;
+    vertical-align: baseline;
+    background: none;
+    margin-left: .5em;
+    }
+
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>del / ins</title>
+  <meta name="author" content="Justin Gagne">
+</head>
+<body>
+
+<section>
+<h2>Deletion & Insertion</h2>
+<p>Edit (text to be printed) by checking its consistency and accuracy. <del class="copyedit" title="delete">The offending paragraph was deleted.</del> A distinct section of a piece of writing, usually dealing with a single theme and indicated by a new line<ins class="copyedit" title="add">, indentation, or numbering</ins>.</p>
+
+<section>
+  <h3>Reference</h3>
+  <ul>
+    <li>See <a href="http://thinkingwithtype.com/extras/#editing-hard-copy" target="_blank" rel="noopener" title="Open New Tab/Window">Editing Hard Copy</a> via Ellen Lupton</li>
+  </ul>
+</section>
+
+</section>
+
+</body>
+</html>
